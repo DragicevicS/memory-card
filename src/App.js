@@ -1,4 +1,5 @@
 import React from 'react';
+import Cards from './components/Cards';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         </div>
       </header>
       <main>
-
+        <Cards />
       </main>
       <footer>
         <p>Copyright © 2023 DragicevicS</p>
