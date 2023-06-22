@@ -91,7 +91,7 @@ function Cards() {
 
   
     return (
-      <>
+      <div className='cards-container'>
         {cards.map((card) => (
           <div key={card.id} className='card'>
             <div>
@@ -102,7 +102,7 @@ function Cards() {
             </div>
           </div>
         ))}
-      </>
+      </div>
     ); 
 };
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+
 :root {
   --color-1: #DDDDDD;
   --color-2: #222831;
@@ -9,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 #root {
@@ -51,28 +53,49 @@ header h1 {
 /* main */
 
 main {
-  display: grid;
-  grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.5em;
+  gap: 3em;
   height: 100%;
-  padding: 8em;
+  padding: 1em;
   background-color: var(--color-3);
+  box-shadow: 0 0 5px;
+}
+
+main h2 {
+  color: var(--color-1);
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
 }
 
 .card {
   text-align: center;
+  width: min-content;
   height: min-content;
   padding: 5px;
   color: var(--color-4);
   border: 2px solid var(--color-1);
   border-radius: 3px;
+  box-shadow: 0 0 5px;
 }
 
 .card:hover {
   cursor: pointer;
   position: relative;
   bottom: 2px;
+  text-decoration: underline;
+}
+
+.card:active {
+  position: relative;
+  top: 2px;
 }
 
 /* footer */
@@ -81,6 +104,13 @@ footer {
   justify-content: center;
   height: 3em;
   background-color: var(--color-2);
-  color: var(--color-4);
+  color: var(--color-1);
   font-style: italic;
+  box-shadow: 0 0 5px black;
+}
+
+@media screen and (max-width: 1190px), (max-height: 725px) {
+  #root {
+    height: 100%;
+  }
 }
