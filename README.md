@@ -6,10 +6,10 @@ This Memory Card Game is a simple yet engaging web application built using the r
 
 The objective is simple: Don't click on the same card twice!
 
-- at the start of the game, all cards will be shuffled and laid in rows
-- each click on a card will result in another shuffle
-- if you click on a card twice, it's game over
-- maximum score is 12
+- At the start of the game, all cards will be shuffled and laid in rows
+- Each click on a card will result in another shuffle
+- If you click on a card twice, it's game over
+- Maximum score is 12
 
 ---
 
